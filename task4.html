@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+
+
+
+    .static ,.relative ,.absolut {
+    border: 2px dashed black;
+    margin: 30px;
+    text-align:center;
+    height: fit-content;
+    width: fit-content;
+}
+
+
+
+
+
+.relative>div,.static> div,.absolut>div
+{
+    display: inline-block;
+
+
+
+    height: 40px;
+width: 40px;
+}
+
+.relative>.green {
+    position: relative; 
+    position: relative; top: 9px; left: 10px;
+
+}
+
+
+.absolut>.green{
+
+    position: absolute;
+    left: 44px;
+    bottom: 380px;
+}
+
+
+
+
+
+.red{ background-color: red;}   
+.green{background-color: green;}
+
+
+</style>
+
+
+
+</head>
+<body>
+    
+
+
+    <p>position:static</p>
+
+
+
+<div>
+
+<div class="static">
+    <div class="red">One</div>
+    <div class="green">Two</div>
+    <div class="red">Three</div>
+    <div class="red">Four</div>
+</div>
+
+
+
+<p>Position : relative</p>
+    <div class="relative">
+        <div class="red">One</div>
+        <div class="green">Two</div>
+        <div class="red">Three</div>
+        <div class="red">Four</div>
+    </div>
+
+
+    <p>Position : absolut</p>
+    <div class="absolut">
+        <div class="red">One</div>
+        <div class="green">Two</div>
+        <div class="red">Three</div>
+        <div class="red">Four</div>
+    </div>
+
+
+
+
+
+</body>
+</html>
